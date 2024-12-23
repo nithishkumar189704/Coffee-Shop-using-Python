@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Products</title>
+</head>
+<body>
+    <div class="coffees" id="coffees">
+        <h2 class="heading">Coff<span>ees</span></h2>
+        <ul class="menu">
+            <li><a href="{% url 'homepage' %}">BACK</a></li>
+        </ul>
+
+        <div class="coffees-container">
+            <div class="coffees-box">
+                <img src="{% static 'Cappuccino.jpg' %}" alt="">
+                <div class="coffees-info">
+                    <h4>Cappuccino</h4> 
+                    <p>Cappuccino is an espresso-based coffee drink that is traditionally prepared with steamed milk including a layer of milk foam.</p>
+                </div>   
+            </div>
+            <div class="coffees-box">
+                <img src="{% static 'Caffè Macchiato.jpg' %}"  alt="">
+                <div class="coffees-info">
+                    <h4>Caffè Macchiato</h4>
+                    <p>The caffè macchiato has the highest ratio of espresso to milk of any drink made with those ingredients.</p>   
+                </div>
+            </div>
+            <div class="coffees-box">
+                <img src="{% static 'Espresso Coffee.jpg' %}" alt="">
+                <div class="coffees-info">
+                    <h4>Espresso Coffee</h4>
+                    <p>Espresso is a concentrated form of coffee produced by forcing hot water under high pressure through finely ground coffee beans.</p>
+                </div>
+            </div>
+            <div class="coffees-box">
+                <img src="{% static 'Mocha1.jpg' %}" alt="">
+                <div class="coffees-info">
+                    <h4>Mocha</h4>
+                    <p>A mocha latte is a mixture of espresso and hot chocolate. It is often described as a chocolate and coffee blend that tends to be sweeter than either one alone.</p>
+                </div>
+            </div>
+            <div class="coffees-box">
+                <img src="{% static 'Cold Brew.jpg' %}" alt="">
+                <div class="coffees-info">
+                    <h4>Cold Brew</h4>
+                    <p>Cold brew coffee is the process of steeping coffee grounds in water at cool temperatures for an extended period. Coarse-ground beans are soaked in water for about 12 to 24 hours.</p>
+                </div>
+            </div>
+            <div class="coffees-box">
+                <img src="{% static 'Frappe coffee.jpg' %}" alt="">
+                <div class="coffees-info">
+                    <h4>Frappe Coffee</h4>
+                    <p>A frappé coffee is a Greek iced coffee drink generally made from spray-dried instant coffee, water, sugar, and milk.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
